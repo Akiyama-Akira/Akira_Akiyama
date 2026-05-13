@@ -1,3 +1,4 @@
+
 (function () {
   "use strict";
 
@@ -107,5 +108,31 @@
   }
 
   window.addEventListener("scroll", updateActiveLink, { passive: true });
+
+  const legalOverlay     = document.getElementById("legalOverlay");
+  const legalTriggerBtn  = document.getElementById("legalTriggerBtn");
+  const legalCloseBtn    = document.getElementById("legalCloseBtn");
+  const legalCloseBtnBot = document.getElementById("legalCloseBtnBottom");
+
+  function openLegal() {
+    legalOverlay.classList.add("open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeLegal() {
+    legalOverlay.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+
+  legalTriggerBtn.addEventListener("click", openLegal);
+  legalCloseBtn.addEventListener("click", closeLegal);
+  legalCloseBtnBot.addEventListener("click", closeLegal);
+
+  legalOverlay.addEventListener("click", (e) => {
+    if (e.target === legalOverlay) closeLegal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLegal();
+  });
 
 })();
