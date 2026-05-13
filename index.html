@@ -19,6 +19,7 @@
       <nav class="nav-links" id="navLinks">
         <a href="#about" class="nav-link">О себе</a>
         <a href="#activity" class="nav-link">Деятельность</a>
+        <a href="#projects" class="nav-link">Проекты</a>
         <a href="#contacts" class="nav-link">Контакты</a>
       </nav>
 
@@ -33,11 +34,12 @@
       </div>
     </div>
   </header>
-
+  
   <div class="mobile-menu" id="mobileMenu">
     <nav class="mobile-nav">
       <a href="#about"    class="mobile-link" data-close>О себе</a>
       <a href="#activity" class="mobile-link" data-close>Деятельность</a>
+      <a href="#projects" class="mobile-link" data-close>Проекты</a>
       <a href="#contacts" class="mobile-link" data-close>Контакты</a>
     </nav>
   </div>
@@ -105,66 +107,98 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="activity">
-      <div class="container">
-        <div class="section-header reveal">
-          <span class="section-num">02</span>
-          <h2 class="section-title">Деятельность</h2>
+<section class="section section-alt" id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Проекты</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- 1 -->
+      <a href="https://akiyama-akira.github.io/todo-list/" target="_blank" rel="noopener" class="project-card reveal delay-1">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-tag">Web</span>
+            <span class="project-arrow">↗</span>
+          </div>
+
+          <h3 class="project-title">
+            Minimal Notes
+          </h3>
+
+          <p class="project-desc">
+            Простое приложение для заметок и задач прямо в браузере с сохранением данных в LocalStorage.  
+          </p>
+
+          <ul class="project-tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>LocalStorage</li>
+          </ul>
         </div>
-        <div class="cards-grid">
+      </a>
 
-          <div class="card reveal delay-1">
-            <div class="card-icon">&#60;/&#62;</div>
-            <h3 class="card-title">Front-End разработка</h3>
-            <p class="card-text">
-              Изучаю основополагающие технологии веба: <strong>HTML5</strong>, <strong>CSS3</strong> и <strong>JavaScript</strong>. Практикую семантическую вёрстку, адаптивный дизайн, работу с CSS-анимациями и современными возможностями ES2020+.
-            </p>
-            <ul class="card-tags">
-              <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
-            </ul>
+      <!-- 2 -->
+      <a href="https://akiyama-akira.github.io/random/" target="_blank" rel="noopener" class="project-card reveal delay-2">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-tag">API</span>
+            <span class="project-arrow">↗</span>
           </div>
 
-          <div class="card reveal delay-2">
-            <div class="card-icon">⬡</div>
-            <h3 class="card-title">Back-End разработка</h3>
-            <p class="card-text">
-              Осваиваю серверную разработку с помощью <strong>Node.js</strong> и экосистемы вокруг него. Изучаю построение REST API, маршрутизацию, работу с базами данных и основы серверной архитектуры.
-            </p>
-            <ul class="card-tags">
-              <li>Node.js</li><li>REST API</li><li>Базы данных</li>
-            </ul>
-          </div>
+          <h3 class="project-title">
+            Random Quote Generator
+          </h3>
 
-          <div class="card reveal delay-3">
-            <div class="card-icon">&#9671;</div>
-            <h3 class="card-title">Следующий шаг: React</h3>
-            <p class="card-text">
-              Планирую перейти к изучению <strong>React</strong> — компонентного подхода, управления состоянием, хуков и построения полноценных SPA-приложений. Это следующая ключевая ступень в моём развитии.
-            </p>
-            <ul class="card-tags">
-              <li>React</li><li>SPA</li><li>Компоненты</li>
-            </ul>
-          </div>
+          <p class="project-desc">
+            Генератор случайных цитат. Обновляет цитату при каждом клике без перезагрузки страницы.  
+          </p>
 
-          <div class="card reveal delay-4">
-            <div class="card-icon">&#8734;</div>
-            <h3 class="card-title">Постоянное развитие</h3>
-            <p class="card-text">
-              Разработка — это непрерывный процесс обучения. Слежу за актуальными трендами, читаю документацию, участвую в pet-проектах и планирую расширять стек в сторону TypeScript, облачных технологий и DevOps практик.
-            </p>
-            <ul class="card-tags">
-              <li>TypeScript</li><li>Git</li><li>DevOps</li>
-            </ul>
-          </div>
-
+          <ul class="project-tags">
+            <li>JavaScript</li>
+            <li>DOM</li>
+            <li>Events</li>
+            <li>CSS</li>
+          </ul>
         </div>
-      </div>
-    </section>
+      </a>
+
+      <!-- 3 -->
+      <a href="https://akiyama-akira.github.io/simple-c/" target="_blank" rel="noopener" class="project-card reveal delay-3">
+        <div class="project-card-inner">
+          <div class="project-meta">
+            <span class="project-tag">Tool</span>
+            <span class="project-arrow">↗</span>
+          </div>
+
+          <h3 class="project-title">
+            Simple Calculator
+          </h3>
+
+          <p class="project-desc">
+            Базовый калькулятор для выполнения простых математических операций прямо в браузере.  
+          </p>
+
+          <ul class="project-tags">
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Logic</li>
+          </ul>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
 
     <section class="section" id="contacts">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-num">03</span>
+          <span class="section-num">04</span>
           <h2 class="section-title">Контакты</h2>
         </div>
         <p class="contacts-intro reveal delay-1">
@@ -218,12 +252,202 @@
 
   </main>
 
+  <div class="legal-trigger-wrap">
+    <button class="legal-trigger-btn" id="legalTriggerBtn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1M4.22 4.22l.707.707M18.364 18.364l.707.707M3 12H4m16 0h1M4.22 19.778l.707-.707M18.364 5.636l.707-.707M9 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0Z"/>
+      </svg>
+      Юридическая информация
+    </button>
+  </div>
+
   <footer class="footer">
     <div class="container footer-inner">
       <span class="footer-name">Akira Akiyama</span>
       <span class="footer-copy">© 2026 — Все права защищены</span>
     </div>
   </footer>
+
+  <div class="legal-overlay" id="legalOverlay" role="dialog" aria-modal="true" aria-labelledby="legalModalTitle">
+    <div class="legal-modal">
+      <div class="legal-modal-header">
+        <div>
+          <p class="legal-modal-label">Документ</p>
+          <h2 class="legal-modal-title" id="legalModalTitle">Юридическая информация</h2>
+        </div>
+        <button class="legal-close" id="legalCloseBtn" aria-label="Закрыть">✕</button>
+      </div>
+
+<div class="legal-modal-body">
+
+  <div class="legal-notice-header">
+    <p class="legal-notice-subtitle">
+      LEGAL COPYRIGHT AND PSEUDONYM NOTICE
+    </p>
+
+    <h3 class="legal-notice-main-title">
+      ЮРИДИЧЕСКОЕ УВЕДОМЛЕНИЕ ОБ АВТОРСКОМ ПРАВЕ
+      И ИСПОЛЬЗОВАНИИ ПСЕВДОНИМА
+    </h3>
+  </div>
+
+  <div class="legal-intro">
+    Настоящий раздел содержит юридически значимые сведения
+    об авторе, правовом статусе используемого творческого
+    псевдонима и верификации цифровых профилей.
+  </div>
+
+  <section class="legal-section">
+
+    <div class="legal-section-header">
+      <span class="legal-section-num">§ 1</span>
+
+      <h3 class="legal-section-title">
+        Сведения об авторе и правообладателе
+      </h3>
+    </div>
+
+    <div class="legal-section-body">
+
+      <p>
+        Настоящий программный код, архитектура,
+        дизайн, графические элементы и текстовое
+        наполнение веб-сайта являются объектом
+        интеллектуальной собственности.
+      </p>
+
+      <p>
+        Размещённый веб-ресурс:
+      </p>
+
+      <p>
+        <a
+          href="https://akiyama-akira.github.io/Akira_Akiyama/#activity"
+          target="_blank"
+          rel="noopener"
+        >
+          https://akiyama-akira.github.io/Akira_Akiyama/
+        </a>
+      </p>
+
+      <p>
+        <strong>ФИО автора:</strong>
+        Углик Степан Алексеевич
+      </p>
+
+      <p>
+        <strong>Место проживания:</strong>
+        г. Минск, Фрунзенский район.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="legal-section">
+
+    <div class="legal-section-header">
+      <span class="legal-section-num">§ 2</span>
+
+      <h3 class="legal-section-title">
+        Правовой статус творческого псевдонима
+      </h3>
+    </div>
+
+    <div class="legal-section-body">
+
+      <p>
+        Профессиональная деятельность
+        по разработке программного обеспечения
+        осуществляется под творческим псевдонимом:
+      </p>
+
+      <p>
+        <strong>Akira Akiyama</strong>
+        (Акира Акияма)
+      </p>
+
+      <p>
+        Использование псевдонима соответствует
+        законодательству Республики Беларусь,
+        включая статью 18 Гражданского кодекса РБ.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="legal-section">
+
+    <div class="legal-section-header">
+      <span class="legal-section-num">§ 3</span>
+
+      <h3 class="legal-section-title">
+        Верификация каналов связи
+      </h3>
+    </div>
+
+    <div class="legal-section-body">
+
+      <p>
+        Владение данным репозиторием
+        подтверждается верифицированными
+        каналами связи автора.
+      </p>
+
+      <p>
+        <strong>Telegram:</strong>
+        @IdkwswhXD
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        uglikstepan08@gmail.com
+      </p>
+
+    </div>
+
+  </section>
+
+  <section class="legal-section">
+
+    <div class="legal-section-header">
+      <span class="legal-section-num">§ 4</span>
+
+      <h3 class="legal-section-title">
+        Действие авторских прав
+      </h3>
+    </div>
+
+    <div class="legal-section-body">
+
+      <p>
+        Авторские права регулируются
+        Законом Республики Беларусь
+        «Об авторском праве и смежных правах».
+      </p>
+
+      <p>
+        Авторское право возникает автоматически
+        в момент создания произведения.
+      </p>
+
+      <p>
+        © Углик Степан Алексеевич, 2026.
+        Все права защищены.
+      </p>
+
+    </div>
+
+  </section>
+
+</div>
+      <div class="legal-modal-footer">
+        <span class="legal-footer-note">Документ носит информационный характер · Akira Akiyama © 2026</span>
+        <button class="legal-close-btn" id="legalCloseBtnBottom">Закрыть</button>
+      </div>
+    </div>
+  </div>
 
   <script src="index.js"></script>
 </body>
